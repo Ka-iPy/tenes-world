@@ -18,6 +18,10 @@ export const Header = styled.header`
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: ${theme.breakpoints.mobile}) {
+        padding: 1rem;
+    }
 `;
 
 export const Logo = styled.div`
@@ -30,18 +34,39 @@ export const Logo = styled.div`
         font-size: 1.8rem;
         margin: 0;
     }
+
+    @media (max-width: ${theme.breakpoints.mobile}) {
+        h1 {
+            font-size: 1.4rem;
+        }
+    }
 `;
 
 export const Nav = styled.nav`
     display: flex;
     gap: 2rem;
     align-items: center;
+
+    @media (max-width: ${theme.breakpoints.tablet}) {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: ${theme.colors.secondary};
+        padding: 1rem;
+        justify-content: center;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    }
 `;
 
 export const MainNav = styled.div`
     display: flex;
     gap: 2rem;
     align-items: center;
+
+    @media (max-width: ${theme.breakpoints.tablet}) {
+        gap: 1rem;
+    }
 `;
 
 export const AuthNav = styled.div`
@@ -51,6 +76,11 @@ export const AuthNav = styled.div`
     margin-left: 2rem;
     padding-left: 2rem;
     border-left: 1px solid rgba(255, 255, 255, 0.2);
+
+    @media (max-width: ${theme.breakpoints.tablet}) {
+        margin-left: 1rem;
+        padding-left: 1rem;
+    }
 `;
 
 export const NavLink = styled.a`
@@ -61,6 +91,13 @@ export const NavLink = styled.a`
     display: flex;
     align-items: center;
     gap: 0.5rem;
+
+    @media (max-width: ${theme.breakpoints.tablet}) {
+        font-size: 0.9rem;
+        flex-direction: column;
+        gap: 0.2rem;
+        text-align: center;
+    }
 
     &:hover {
         color: ${theme.colors.primary};
@@ -73,12 +110,20 @@ export const NavLink = styled.a`
 
 export const HomeIcon = styled.span`
     font-size: 1.2rem;
+
+    @media (max-width: ${theme.breakpoints.tablet}) {
+        font-size: 1.5rem;
+    }
 `;
 
 export const MainContent = styled.main`
     padding: 6rem 2rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
+
+    @media (max-width: ${theme.breakpoints.tablet}) {
+        padding: 6rem 1rem 5rem;
+    }
 `;
 
 export const Section = styled.section`
@@ -90,6 +135,11 @@ export const SectionTitle = styled.h2`
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
+
+    @media (max-width: ${theme.breakpoints.mobile}) {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
 `;
 
 export const Grid = styled.div`
@@ -97,6 +147,12 @@ export const Grid = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 1rem;
+
+    @media (max-width: ${theme.breakpoints.mobile}) {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
 `;
 
 export const Card = styled.div`
@@ -109,6 +165,12 @@ export const Card = styled.div`
     &:hover {
         transform: translateY(-5px);
     }
+
+    @media (max-width: ${theme.breakpoints.mobile}) {
+        &:hover {
+            transform: none;
+        }
+    }
 `;
 
 export const CardImage = styled.img`
@@ -119,6 +181,10 @@ export const CardImage = styled.img`
 
 export const CardContent = styled.div`
     padding: 1.5rem;
+
+    @media (max-width: ${theme.breakpoints.mobile}) {
+        padding: 1rem;
+    }
 `;
 
 export const CardTitle = styled.h3`
@@ -166,6 +232,11 @@ export const HeroSection = styled.section`
     position: relative;
     margin-top: -4rem;
 
+    @media (max-width: ${theme.breakpoints.mobile}) {
+        height: 50vh;
+        margin-top: -2rem;
+    }
+
     &::before {
         content: '';
         position: absolute;
@@ -182,14 +253,23 @@ export const HeroContent = styled.div`
     color: ${theme.colors.white};
     position: relative;
     z-index: 1;
+    padding: 0 1rem;
 
     h1 {
         font-size: 4rem;
         margin-bottom: 1rem;
+
+        @media (max-width: ${theme.breakpoints.mobile}) {
+            font-size: 2.5rem;
+        }
     }
 
     p {
         font-size: 1.5rem;
         margin-bottom: 2rem;
+
+        @media (max-width: ${theme.breakpoints.mobile}) {
+            font-size: 1.2rem;
+        }
     }
 `; 
