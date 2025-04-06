@@ -4,6 +4,7 @@ import {
     ContentWrapper,
     FormContainer,
     Logo,
+    LogoImage,
     LogoTitle,
     LogoSubtitle,
     FormGroup,
@@ -38,6 +39,7 @@ const Login: React.FC = () => {
                 </TenesImage>
                 <FormContainer>
                     <Logo>
+                        <LogoImage src="/TenesWorldLogo.png" alt="Tenes World Logo" />
                         <LogoTitle>Tenes World</LogoTitle>
                         <LogoSubtitle>Where Dreams Come Alive!</LogoSubtitle>
                     </Logo>

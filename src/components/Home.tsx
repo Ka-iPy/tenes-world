@@ -4,6 +4,7 @@ import {
     HomeContainer,
     Header,
     Logo,
+    LogoImage,
     Nav,
     MainNav,
     AuthNav,
@@ -77,6 +78,7 @@ const Home: React.FC = () => {
         <HomeContainer>
             <Header>
                 <Logo>
+                    <LogoImage src="/TenesWorldLogo.png" alt="Tenes World Logo" />
                     <h1>Tenes World</h1>
                 </Logo>
                 <Nav>

@@ -14,13 +14,23 @@ export const FormContainer = styled.div`
 `;
 
 export const Logo = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 1.5rem;
+`;
+
+export const LogoImage = styled.img`
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
 `;
 
 export const LogoTitle = styled.h1`
     color: ${theme.colors.primary};
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
 `;
 
 export const LogoSubtitle = styled.p`

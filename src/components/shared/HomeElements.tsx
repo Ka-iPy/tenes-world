@@ -42,6 +42,12 @@ export const Logo = styled.div`
     }
 `;
 
+export const LogoImage = styled.img`
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+`;
+
 export const Nav = styled.nav`
     display: flex;
     gap: 2rem;
