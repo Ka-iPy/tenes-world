@@ -43,7 +43,7 @@ export const Logo = styled.div`
 `;
 
 export const LogoImage = styled.img`
-    height: 40px;
+    height: 70px;
     width: auto;
     object-fit: contain;
 `;
